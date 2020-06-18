@@ -80,7 +80,7 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<httparty>.freeze)
+      s.add_runtime_dependency(%q<httparty>.freeze, '~> 0.18')
       s.add_development_dependency(%q<rdoc>.freeze)
       s.add_development_dependency(%q<bundler>.freeze)
       s.add_development_dependency(%q<jeweler>.freeze)
@@ -90,7 +90,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<webmock>.freeze)
       s.add_development_dependency(%q<coveralls>.freeze)
     else
-      s.add_dependency(%q<httparty>.freeze)
+      s.add_dependency(%q<httparty>.freeze, '~> 0.18')
       s.add_dependency(%q<rdoc>.freeze)
       s.add_dependency(%q<bundler>.freeze)
       s.add_dependency(%q<jeweler>.freeze)
@@ -101,7 +101,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<coveralls>.freeze)
     end
   else
-    s.add_dependency(%q<httparty>.freeze)
+    s.add_dependency(%q<httparty>.freeze, '~> 0.18')
     s.add_dependency(%q<rdoc>.freeze)
     s.add_dependency(%q<bundler>.freeze)
     s.add_dependency(%q<jeweler>.freeze)
