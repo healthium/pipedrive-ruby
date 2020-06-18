@@ -1,7 +1,7 @@
 module Pipedrive
   class Stage < Base
-    def deals
-      Deal.all(request_path: "#{resource_path}/#{id}/deals", query: { everyone: 1 })
+    def deals(options = {})
+      Deal.all(options.merge(request_path: build_request_path(:deals)))
     end
   end
 end
